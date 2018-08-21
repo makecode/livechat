@@ -1,0 +1,39 @@
+.controls
+  display: inline-flex
+  flex-direction: row
+  flex-wrap: nowrap
+
+  &__el
+    display: inline-block
+    position: relative
+    margin: 0
+    padding: 0
+    width: 20px
+    height: 20px
+    border: none
+    cursor: pointer
+    transition: all .3s ease-in-out
+    transform-origin: center center
+
+    &:first-child
+      margin-right: 5px
+
+    &:focus
+      outline: none
+
+    &:hover
+      transform: rotate(20deg)
+
+    &.close:hover
+      transform: rotate(90deg)
+
+    &.sound.disabled
+      &::after
+        position: absolute
+        top: 0
+        left: 50%
+        content: ''
+        width: 1px
+        background-color: black
+        height: 100%
+        transform: rotate(45deg) translateX(-50%)

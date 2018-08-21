@@ -1,0 +1,51 @@
+.form
+  position: relative
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  &__input
+    position: relative
+    width: 100%
+    margin-right: 5px
+
+  &__textarea
+    margin-right: 10px
+    width: 100%
+    height: 35px
+    resize: none
+    outline: none
+    padding-left: 15px
+    padding-right: 40px
+    font-size: 14px
+    line-height: 28px
+    background-color: #f8faff
+    border-radius: 20px
+    border: 1px solid #eee
+    box-sizing: border-box
+
+  &__file
+    position: absolute
+    top: 50%
+    right: 14px
+    padding: 0
+    margin: 0
+    transform: translateY(-50%)
+    width: 20px
+    height: 20px
+    border: none
+    background-color: transparent
+    transition: all .3s ease-in-out
+    cursor: pointer
+
+  &__btn
+    display: inline-block
+    padding: 4px
+    transition: all .3s ease-in-out
+    cursor: pointer
+    border-radius: 50%
+    background-color: #eee
+    transform-origin: center center
+
+    &:hover
+      transform: rotate(45deg)

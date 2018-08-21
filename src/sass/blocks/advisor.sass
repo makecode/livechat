@@ -1,0 +1,58 @@
+.advisor
+  width: 100%
+
+  &.online
+    .advisor__status::after
+      background-color: #94ce51
+
+  &__wrap
+    display: flex
+    align-items: center
+
+  &__avatar
+    position: relative
+    width: 35px
+    height: 35px
+    box-sizing: border-box
+    border-radius: 50%
+    margin-right: 10px
+    overflow: hidden
+    background-size: cover
+    background-color: #fff
+    background-position: center
+
+  &__info
+    display: flex
+    flex-direction: column
+
+  &__name
+    display: block
+    margin-bottom: 4px
+    font-size: 15px
+    color: #9a9a9a
+    +regular
+
+  &__status
+    position: relative
+    margin-bottom: 4px
+    padding-left: 16px
+    color: #c2c2c2
+    font-size: 12px
+
+    &::after
+      position: absolute
+      content: ''
+      top: 50%
+      left: 4px
+      width: 6px
+      height: 6px
+      background-color: #c2c2c2
+      border-radius: 50%
+      transform: translateY(-50%)
+
+  &__position
+    width: 230px
+    font-size: 12px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis

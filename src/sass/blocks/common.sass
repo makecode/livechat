@@ -1,0 +1,86 @@
+=light
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 300
+
+=regular
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 400
+
+=bold
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 600
+
+body
+  width: 100%
+  height: 100%
+  font-size: 12px
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  overflow: hidden
+  background-color: #fff
+  margin: 100px auto
+  +light
+
+a
+  display: inline-block
+  text-decoration: none
+  cursor: pointer
+  transition: all .3s ease-in-out
+
+img
+  display: inline-block
+  width: 100%
+
+input[type='text'],
+input[type='search'],
+input[type='button']
+  border-radius: 0
+  -moz-appearance: none
+  -webkit-appearance: none
+
+button[type='submit']
+  border: none
+  -moz-appearance: none
+  -webkit-appearance: none
+
+::-webkit-input-placeholder
+  color: #9a9a9a
+  +light
+
+.btn
+  padding: 0
+  border: none
+  border-radius: 0
+  width: 60px
+  height: 60px
+  background-color: transparent
+  background-image: url('../img/icon_conversation.svg')
+  cursor: pointer
+
+  &:focus
+    outline: none
+
+.btn-close
+  cursor: pointer
+
+.widget
+  display: none
+  position: fixed
+  bottom: 50px
+  right: 50px
+
+.info-line
+  position: absolute
+  top: -15px
+  left: 0
+  font-size: 10px
+  color: #9a9a9a
+
+.time
+  margin-bottom: 25px
+  font-size: 12px
+  color: #9a9a9a
+  text-align: center
+  text-transform: uppercase
+  +regular
+

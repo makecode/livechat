@@ -1,0 +1,95 @@
+.chat
+  display: block
+  position: fixed
+  right: -1000px
+  width: 340px
+  min-width: 320px
+  height: 100vh
+  font-size: 16px
+  color: #333
+  background-color: #fff
+  border-left: 1px solid #dedede
+  box-sizing: border-box
+  transition: right .5s ease-in-out
+  z-index: 1000
+  +m(768)
+    width: 100%
+
+  &.is-active
+    top: 0
+    right: 0
+
+  &__header
+    padding: 10px
+    margin-bottom: 20px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid #dedede
+    box-shadow: 0 15px 25px -13px rgba(0,0,0,.13)
+
+  &__content
+    display: flex
+    flex-direction: column
+    padding: 0 10px 15px 50px
+
+  &__bottom
+    position: absolute
+    bottom: 0
+    width: 100%
+    padding: 0 10px 15px
+    box-sizing: border-box
+
+  &__left
+    margin-right: 10px
+
+  &__description
+    margin-bottom: 15px
+
+.box
+  position: relative
+  margin: 4px 0
+  display: flex
+  flex-direction: column
+
+  &.advisor
+    padding-right: 60px
+
+  &.user
+    padding-left: 60px
+
+    .message-wrap
+      display: flex
+      justify-content: flex-end
+
+.message
+  display: inline-block
+  margin-bottom: 6px
+  padding: 8px 10px
+  border-radius: 20px
+  font-size: 14px
+
+.advisor-message
+  background-color: $grey
+
+.user-message
+  background-color: $blue
+  color: #ffffff
+
+.avatar
+  position: absolute
+  bottom: 4px
+  left: -40px
+  width: 30px
+  height: 30px
+  border-radius: 50%
+  background-size: cover
+  background-color: #fff
+  background-position: center
+
+.message-status
+  display: block
+  text-align: right
+  font-size: 10px
+  color: #9a9a9a
