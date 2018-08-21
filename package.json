@@ -1,11 +1,11 @@
 {
-  "name": "ProjectName",
+  "name": "LiveChat",
   "version": "1.0.0",
-  "description": "Gulp template",
+  "description": "LiveChat",
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/"
+    "url": "https://github.com/livechat/build"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
