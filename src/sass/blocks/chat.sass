@@ -33,6 +33,7 @@
   &__content
     display: flex
     flex-direction: column
+    overflow: scroll
     padding: 0 10px 15px 50px
 
   &__bottom
@@ -64,12 +65,63 @@
       display: flex
       justify-content: flex-end
 
+  &.input-email,
+  &.input-name
+    background-color: #fff
+    padding: 10px
+    border: 1px solid #eee
+    border-radius: 20px
+    box-shadow: 0 15px 25px -13px rgba(0,0,0,.13)
+
+.input
+  display: flex
+  flex-direction: column
+
+  &__text
+    font-size: 13px
+    color: #9a9a9a
+
+  &__field
+    margin-top: 5px
+    display: flex
+
+  &__el
+    padding: 0 10px
+    width: 175px
+    height: 30px
+    line-height: 30px
+    border: 1px solid #eee
+    border-radius: 20px 0 0 20px
+    box-sizing: border-box
+
+    &:focus
+      outline: none
+      border-color: $blue
+
+  &__btn
+    width: 80px
+    height: 30px
+    line-height: 30px
+    text-align: center
+    background-color: $blue
+    color: #fff
+    text-transform: uppercase
+    border-radius: 0 20px 20px 0
+    box-sizing: border-box
+    cursor: pointer
+    transition: all .3s ease-in-out
+    &:focus
+      outline: none
+    &:hover
+      background-color: #3294e9
+
 .message
   display: inline-block
   margin-bottom: 6px
   padding: 8px 10px
   border-radius: 20px
   font-size: 14px
+  +regular
 
 .advisor-message
   background-color: $grey
